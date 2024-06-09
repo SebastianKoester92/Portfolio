@@ -1,0 +1,30 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.name {
+    color: white;
+    font-size: 30px;
+
+    >span:hover {
+        cursor: pointer;
+    }
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    font-size: 23px;
+    font-weight: 400;
+    gap: 29px;
+    color: white;
+
+    >span:hover {
+        cursor: pointer;
+        color: #1CDAE6;
+    }
+}
