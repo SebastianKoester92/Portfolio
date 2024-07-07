@@ -1,7 +1,110 @@
 .startscreen {
     height: 100vh;
     background-color: #141D2F;
+}
+
+.personalFrontPage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
     padding-left: 100px;
     padding-right: 100px;
+
+    .myImage {
+        background-color: green;
+        width: 646px;
+        height: 705px;
+    }
+    .personalDescriptionDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .personalDescription {
+            display: flex;
+        }
+        .iAmText {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .iAmTextSpan {
+            color: white;
+            font-size: 64px;
+            font-weight: 400;
+            writing-mode: vertical-lr;
+            transform: rotate(180deg);
+        }
+        .nameAndJob {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            .startName {
+                color: white;
+                font-size: 90px;
+                font-weight: 700;
+                line-height: 94px;
+            }
+            .startJob {
+                color: #4B47FF;
+                font-size: 58px;
+                font-weight: 400;
+                line-height: 69.6px;
+            }
+        }
+        .letsTalkButton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 23px;
+            font-weight: 400;
+            width: 165px;
+            height: 58px;
+            border-radius: 10px;
+            padding: 15px, 30px, 15px, 30px;
+            background-color: #00BEE8;
+            margin-top: 30px;
+        }
+        .letsTalkButton:hover {
+            cursor: pointer;
+            background-color: #4B47FF;
+            scale: 1.15;
+        }
+    }
+
+
 }
+
+.startScreenSocial {
+    display: flex;
+    align-items: center;
+    margin-top: 200px;
+    gap: 42px;
+
+   .lineDiv {
+        border-style: solid;
+        width: 100px;
+        height: 0;
+        border-width: 3px;
+        border-color: #4B47FF;
+        border-top-right-radius: 90px;
+        border-bottom-right-radius: 90px;
+    }
+    .socialIcon {
+        display: flex;
+        align-items: center;
+    }
+    .startEmail {
+        color: white;
+        font-size: 23px;
+        font-weight: 400;
+    }
+    .startEmail:hover {
+        cursor: pointer;
+    }
+}
+
 
