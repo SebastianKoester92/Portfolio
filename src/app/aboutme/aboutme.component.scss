@@ -1,0 +1,62 @@
+.aboutMeSection {
+    display: flex;
+    margin-left: 100px;
+    padding-bottom: 200px;
+    justify-content: space-between;
+
+    .textDiv {
+        display: flex;
+        flex-direction: column;
+        width: 471px;
+
+        .textHead {
+            color: white;
+            font-size: 90px;
+            font-weight: 700;
+        }
+
+        .text {
+            color: white;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        .textImage {
+            height: 50px;
+        }
+
+        .textSecondDiv {
+            display: flex;
+            gap: 35px;
+            margin-left: 20px;
+            margin-top: 30px;
+
+            .imageDivLamp {
+                padding-right: 14px;
+            }
+        }
+    }
+
+    .imageDiv {
+        display: flex;
+        align-items: center;
+
+        .personalImage{
+            display: flex;
+            width: 453px;
+            height: 453px;
+            background-color: green;
+            border-style: solid;
+            border-radius: 360px;
+            border-color: #00BEE8;
+        }
+
+        .lineDiv {
+            width: 267px;
+            height: 0px;
+            border-style: solid;
+            border-color: #00BEE8;
+        }
+    } 
+}
+
