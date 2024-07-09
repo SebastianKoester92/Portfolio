@@ -1,0 +1,67 @@
+.skillsDiv {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+
+
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        width: 721px;
+
+        .imageSkillDiv {
+            width: 88px;
+            height: 100px;
+            margin-bottom: 54px;
+        }
+
+        
+    }
+    .skillsTextDiv {
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        flex-direction: column;
+        width: 471px;
+
+        .skillsheadline {
+            display: flex;
+            color: white;
+            font-size: 90px;
+            font-weight: 700;
+            margin-bottom: 34px;
+        }
+        .skillsdescription {
+            display: inline-block;
+            text-align: right;
+            color: white;
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 50px;
+        }
+        
+            
+
+        .getintouchButton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 23px;
+            font-weight: 400;
+            width: 200px;
+            height: 58px;
+            border-radius: 10px;
+            padding: 15px, 30px, 15px, 30px;
+            background-color: #00BEE8;
+            margin-right: 130px;
+            margin-bottom: 60px;
+        }
+        
+    }
+}
+
+.marginLeft123 {
+    margin-left: 123px;
+}
