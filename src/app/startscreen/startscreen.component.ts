@@ -4,11 +4,17 @@ import { NavbarComponent } from '../navbar/navbar.component';
 import { AboutmeComponent } from '../aboutme/aboutme.component';
 import { MyskillsComponent } from '../myskills/myskills.component';
 import { PortfolioComponent } from '../portfolio/portfolio.component';
+import { ContactComponent } from '../contact/contact.component';
 
 @Component({
   selector: 'app-startscreen',
   standalone: true,
-  imports: [NavbarComponent, AboutmeComponent, PortfolioComponent, MyskillsComponent],
+  imports:[NavbarComponent,
+            AboutmeComponent,
+            PortfolioComponent,
+            MyskillsComponent,
+            ContactComponent,
+          ],
   templateUrl: './startscreen.component.html',
   styleUrl: './startscreen.component.scss'
 })

@@ -1,0 +1,136 @@
+.contactDiv {
+    margin-top: 80px;
+
+    .contactHeadLine {
+        display: flex;
+        align-items: center;
+        gap: 80px;
+
+        .contactLineDiv {
+            width: 50px;
+            height: 0px;
+            border-style: solid;
+            border-color: #4B47FF;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .contactHeadSpan {
+            color: white;
+            font-size: 90px;
+            font-weight: 700;
+        }
+    }
+
+
+
+    .contactContentDiv {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 60px;
+
+        .contactTextDiv {
+            .contactText1 {
+                color: white;
+                font-size: 32px;
+                font-weight: 700;
+                margin-bottom: 30px;
+            }
+            .contactText2 {
+                width: 473px;
+                color: white;
+                font-size: 16px;
+                font-weight: 400;
+                margin-bottom: 20px;
+            }
+            .contactText3 {
+                display: flex;
+                color: white;
+                font-size: 16px;
+                font-weight: 400;
+
+                .contactText3Span{
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .contactForm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .input1 {
+                width: 617px;
+                height: 50px;
+                font-size: 16px;
+                font-weight: 400;
+                margin-bottom: 32px;
+                border-radius: 10px;
+                border: 1px solid #4B47FF;
+                padding-left: 25px;
+                padding-right: 25px;
+                background: none;
+                caret-color: white;
+                color: white;
+            }
+            
+            .input1::placeholder {
+                color: white;
+                font-size: 16px;
+                font-weight: 400;
+            }
+
+            textarea {
+                width: 617px;
+                height: 202px;
+                font-size: 16px;
+                font-weight: 400;
+                margin-bottom: 32px;
+                border-radius: 10px;
+                border: 1px solid #4B47FF;
+                padding-left: 25px;
+                padding-right: 25px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                background: none;
+                caret-color: white;
+                color: white;
+                resize: none;
+            }
+            textarea::placeholder {
+                color: white;
+                font-size: 16px;
+                font-weight: 400;
+            }
+            .input1:hover,
+            textarea:hover {
+                cursor: pointer;
+                border-color:#00BEE8;
+            }
+            .input1:focus,
+            textarea:focus {
+                outline: none;
+                border-color:#00BEE8;
+            }
+
+            .input2 {
+                width: 253px;
+                height: 58px;
+                border: none;
+                border-radius: 10px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                padding-left: 30px;
+                padding-right: 30px;
+                background-color: #00BEE8;
+                color: white;
+                font-size: 23px;
+                font-weight: 400;
+            }
+            .input2:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
