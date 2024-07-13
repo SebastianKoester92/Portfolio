@@ -1,0 +1,57 @@
+.footerTopLine {
+    border: 3px solid #00BEE8;
+    margin-top: 100px;
+}
+
+.footerDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    height: 287px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+    .footerLeft {
+        display: flex;
+        flex-direction: column;
+
+        .footerName {
+            color: white;
+            font-size: 36px;
+            font-weight: 700;
+        }
+        .footerName:hover {
+            cursor: pointer;
+        }
+        .imprint {
+            color: #4B47FF;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .imprint:hover {
+            cursor: pointer;
+            color: #00BEE8;
+        }
+    }
+
+    .copyright {
+        color: white;
+        font-size: 23px;
+        font-weight: 400;
+    }
+
+    .footerRight {
+        display: flex;
+        gap: 32px;
+        div {
+            width: 30px;
+            height: 29.26px;
+        }
+        div:hover {
+            cursor: pointer;
+            scale: 1.3;
+        }
+    }
+    
+
+}
