@@ -1,0 +1,122 @@
+.portfolioDiv {
+    .portfolioHead {
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+        margin-bottom: 100px;
+        
+
+        .portfolioHeadline {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+
+
+            .portfolioTitle {
+                color: white;
+                font-size: 90px;
+                font-weight: 700;
+            }
+            .portfolioleftLine {
+                width: 109px;
+                height: 0px;
+                border-style: solid;
+                border-color: #4B47FF;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+            .portfoliorightLine {
+                width: 484px;
+                height: 0px;
+                border-style: solid;
+                border-color: #4B47FF;
+            }
+        }
+        
+            
+        .portfolioSubtext {
+            width: 733px;
+            font-size: 16px;
+            font-weight: 400;
+            color: white;
+        }    
+        
+    }
+    .projectDiv {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin-left: 100px;
+        margin-right: 100px;
+        gap: 100px;
+        /*transform: scaleX(-1);*/
+
+        .projectImage {
+            height: 500px;
+            /*transform: scaleX(-1);*/
+        }
+
+        .projectDescription {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            width: 513px;
+            gap: 15px;
+            /*transform: scaleX(-1);*/
+
+            .projectName {
+                color: #4B47FF;
+                font-size: 32px;
+                font-weight: 700;
+            }
+            .projectUsedTools {
+                color: #00BEE8;
+                font-size: 23px;
+                font-weight: 400;
+            }
+            .projectDescriptionText {
+                color: white;
+                font-size: 16px;
+                font-weight: 400;
+            }
+            .projectButtons {
+                display: flex;
+                margin-top: 30px;
+                gap: 86px;
+
+                .projectButtonLive {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 152px;
+                    height: 58px;
+                    border-radius: 10px;
+                    padding: 15px, 30px, 15px, 30px;
+                    color: white;
+                    background-color: #4B47FF;
+                    font-size: 23px;
+                    font-weight: 400;
+                }
+                .projectButtonGit {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 137px;
+                    height: 58px;
+                    border-radius: 10px;
+                    border: 1px solid #00BEE8;
+                    padding: 15px, 30px, 15px, 30px;
+                    color: white;
+                    font-size: 23px;
+                    font-weight: 400;
+                }
+                .projectButtonGit:hover,
+                .projectButtonLive:hover {
+                    cursor: pointer;
+                    scale: 1.05;
+                }
+            }
+        }
+    }
+}
