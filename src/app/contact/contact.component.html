@@ -15,10 +15,10 @@
 
 
         <div class="contactFormDiv">
-            <form class="contactForm">
-                <input class="input1" type="text" id="name" name="name" placeholder="Your name" required>
-                <input class="input1" type="email" id="email" name="email" placeholder="Your email" required>
-                <textarea id="message" name="message" placeholder="Your message" required></textarea>
+            <form class="contactForm" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+                <input [(ngModel)]="contactData.name" class="input1" type="text" id="name" name="name" placeholder="Your name" required>
+                <input [(ngModel)]="contactData.email" class="input1" type="email" id="email" name="email" placeholder="Your email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                <textarea [(ngModel)]="contactData.message" id="message" name="message" placeholder="Your message" required></textarea>
                 <input class="input2" type="submit" value="Send message" required>   
             </form>
         </div>
