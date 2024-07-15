@@ -7,14 +7,15 @@
 
 
     .skills {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 20px;
         width: 721px;
 
         .imageSkillDiv {
             width: 88px;
             height: 100px;
-            margin-bottom: 54px;
         }
 
         
@@ -63,6 +64,4 @@
     }
 }
 
-.marginLeft123 {
-    margin-left: 123px;
-}
+

@@ -1,7 +1,7 @@
 .startscreen {
     height: 100vh;
     margin-bottom: 50px;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .personalFrontPage {
@@ -82,7 +82,7 @@
 .startScreenSocial {
     display: flex;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 80px;
     gap: 42px;
 
    .lineDiv {
@@ -98,6 +98,10 @@
         display: flex;
         align-items: center;
     }
+    .socialIcon:hover {
+        cursor: pointer;
+        scale: 1.1;
+    }
     .startEmail {
         color: white;
         font-size: 23px;
@@ -107,5 +111,103 @@
         cursor: pointer;
     }
 }
+
+
+
+
+
+
+
+
+@media (max-width: 2500px) {
+    .PageBox {
+      margin-left: 240px;
+      margin-right: 240px;
+      box-shadow: -10px 0 20px -10px rgba(0,0,0,0.5), 10px 0 20px -10px rgba(0,0,0,0.5);
+    }
+  }
+
+  @media (max-width: 2230px) {
+    .PageBox {
+      margin-left: 150px;
+      margin-right: 150px;
+      box-shadow: -10px 0 20px -10px rgba(0,0,0,0.5), 10px 0 20px -10px rgba(0,0,0,0.5);
+    }
+  }
+
+  @media (max-width: 2050px) {
+    .PageBox {
+      margin-left: 50px;
+      margin-right: 50px;
+      box-shadow: -10px 0 20px -10px rgba(0,0,0,0.5), 10px 0 20px -10px rgba(0,0,0,0.5);
+    }
+  }
+
+  @media (max-width: 1850px) {
+    .PageBox {
+      margin-left: 0;
+      margin-right: 0;
+      box-shadow: -10px 0 20px -10px rgba(0,0,0,0.5), 10px 0 20px -10px rgba(0,0,0,0.5);
+    }
+  }
+
+  @media (max-width: 1745px) {
+    .personalFrontPage {
+        flex-direction: column;
+    }
+    .myImage {
+        margin-bottom: 30px;
+    }
+  }
+
+  @media (max-width: 1099px) {
+    .personalFrontPage {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .iAmText {
+        width: 60px;
+    }
+  }
+
+@media(max-width: 850px) {
+    .PageBox {
+        width: 390px;
+    }
+    .startscreen {
+        height: auto;
+    }
+    .personalFrontPage {
+        padding: 0;
+    }
+    .myImage {
+        height: 417px !important;
+        width: 390px !important;
+    }
+    .iAmTextSpan {
+        font-size: 27px !important;
+    }
+    .startName {
+        font-size: 35px !important;
+        line-height: 54px !important;
+    }
+    .startJob {
+        font-size: 24px !important;
+        line-height: 34.8px !important;
+    }
+    .letsTalkButton {
+        width: 133px !important;
+        height: 49px !important;
+        font-size: 16px !important;
+    }
+    .startEmail {
+        display: none;
+    }
+    .lineDiv {
+        width: 64px;
+    }
+}
+
+
 
 
