@@ -71,7 +71,18 @@
     }    
 }
 
-@media(max-width: 89px){
-
+@media(max-width: 850px) {
+    .textDiv {
+        width: 339px !important;
+    }
+    .textHead {
+        font-size: 45px !important;
+    }
+    .imageDivLamp,
+    .imageDivPuzzle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
