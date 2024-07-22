@@ -17,7 +17,7 @@
 
         .footerName {
             color: white;
-            font-size: 36px;
+            font-size: 40px;
             font-weight: 700;
         }
         .footerName:hover {
@@ -52,6 +52,36 @@
             scale: 1.3;
         }
     }
-    
+   .imprintMobile {
+        display: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 400;
+   }
+   .imprintMobile:hover {
+    cursor: pointer;
+    color: #00BEE8;
+   } 
 
+}
+
+
+
+@media(max-width: 850px) {
+    .footerDiv {
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 !important;
+        gap: 20px !important;
+    }
+    .imprint {
+        display: none !important;
+    }
+    .imprintMobile {
+        display: flex !important;
+    }
+    .footerRight {
+        gap: 42px !important;
+    }
 }

@@ -81,7 +81,7 @@
                 font-weight: 400;
             }
 
-            textarea {
+            .textarea1 {
                 width: 617px;
                 height: 202px;
                 font-size: 16px;
@@ -98,18 +98,18 @@
                 color: white;
                 resize: none;
             }
-            textarea::placeholder {
+            .textarea1::placeholder {
                 color: white;
                 font-size: 16px;
                 font-weight: 400;
             }
             .input1:hover,
-            textarea:hover {
+            .textarea1:hover {
                 cursor: pointer;
                 border-color:#00BEE8;
             }
             .input1:focus,
-            textarea:focus {
+            .textarea1:focus {
                 outline: none;
                 border-color:#00BEE8;
             }
@@ -133,4 +133,45 @@
             }
         }
     }
+}
+
+
+
+@media(max-width: 850px) {
+    .contactHeadLine {
+        gap: 10px !important;
+    }
+    .contactHeadSpan {
+        font-size: 45px !important;
+    }
+    .contactLineDiv {
+        width: 20px !important;
+    }
+    .contactContentDiv {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 50px !important;
+    }
+    .contactTextDiv,
+    .contactText2 {
+        width: 340px !important;
+    }
+    .contactText1 {
+        font-size: 23px !important;
+    }
+
+    .textarea1,
+    .input1 {
+        width: 290px !important;
+    }
+    .input2 {
+        width: 195px !important;
+        font-size: 19px !important;
+    }
+    .contactDiv {
+        margin-top: 130px !important;
+    }
+    
 }

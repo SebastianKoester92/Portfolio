@@ -86,12 +86,14 @@
         margin-left: 0;
         margin-right: 0;
         align-items: center;
+        margin-bottom: 150px !important;
     }
     .getintouchButton {
         display: none !important;
     }
     .getintouchButtonMobile {
-        display: none !important;
+        display: flex !important;
+        margin: 0 !important;
     }
     .skillsheadline {
         font-size: 45px !important;
@@ -104,6 +106,7 @@
         grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)) !important;
         grid-template-rows: repeat(4, 100px) !important;
         width: 340px !important;
+        margin-bottom: 46px;
     }
     .skillImage {
         height: 90px !important;

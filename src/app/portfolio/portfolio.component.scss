@@ -36,7 +36,6 @@
         
             
         .portfolioSubtext {
-            width: 733px;
             font-size: 16px;
             font-weight: 400;
             color: white;
@@ -118,5 +117,54 @@
                 }
             }
         }
+    }
+}
+
+
+
+@media(max-width: 850px) {
+    .portfoliorightLine {
+        width: 75px !important;
+    }
+    .portfolioleftLine {
+        width: 20px !important;
+    }
+    .portfolioTitle {
+        font-size: 45px !important;
+    }
+    .portfolioHead {
+        margin-bottom: 0 !important;
+    }
+    .portfolioHeadDiv {
+        display: flex;
+        flex-direction: column;
+        width: 390px;
+    }
+    .portfolioHeadline {
+        justify-content: end;
+    }
+    .portfolioSubtext {
+        text-align: center !important;
+        width: 340px !important;
+    }
+    .portfolioSubtextDiv {
+        display: flex;
+        justify-content: center;
+    }
+    .projectDiv {
+        flex-direction: column !important;
+        margin: 0 !important;
+        gap: 0 !important;
+    }
+    .projectImage {
+        height: 350px !important;
+    }
+    .projectDescription {
+        width: 340px !important;
+    }
+    .projectName,
+    .projectUsedTools,
+    .projectDescriptionText {
+        text-align: center !important;
     }
 }
