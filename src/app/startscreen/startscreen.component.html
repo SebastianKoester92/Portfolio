@@ -1,37 +1,35 @@
-<app-navbar></app-navbar>
-<div class="PageBox">
-<div class="startscreen">
-    
 
-    <div class="personalFrontPage">
-        <div class="myImage"></div>
-        <div class="personalDescriptionDiv">
-            <div class="personalDescription">
-                <div class="iAmText">
-                    <span class="iAmTextSpan">I am</span>
+<div class="PageBox">
+    <app-navbar></app-navbar>
+    <div class="startscreen">
+        <div class="personalFrontPage">
+            <div class="myImage"></div>
+            <div class="personalDescriptionDiv">
+                <div class="personalDescription">
+                    <div class="iAmText">
+                        <span class="iAmTextSpan">I am</span>
+                    </div>
+                    <div class="nameAndJob">
+                        <span class="startName">Sebastian Köster</span>
+                        <span class="startJob">Frontend Developer</span>
+                    </div>
                 </div>
-                <div class="nameAndJob">
-                    <span class="startName">Sebastian Köster</span>
-                    <span class="startJob">Frontend Developer</span>
-                </div>
+                <div (click)="scrollToId('app-contact')" class="letsTalkButton">Let's Talk!</div>
             </div>
-            <div class="letsTalkButton">Let's Talk!</div>
+        </div>
+        <div class="startScreenSocial">
+            <div class="lineDiv"></div>
+            <div class="socialIcon"><img src="../../assets/img/cat.png"></div>
+            <div class="socialIcon"><img src="../../assets/img/letter.png"></div>
+            <div class="socialIcon"><img src="../../assets/img/linkedin.png"></div>
+            <span class="startEmail">egal&#64;gmail.com</span>
         </div>
     </div>
 
-    <div class="startScreenSocial">
-        <div class="lineDiv"></div>
-        <div class="socialIcon"><img src="../../assets/img/cat.png"></div>
-        <div class="socialIcon"><img src="../../assets/img/letter.png"></div>
-        <div class="socialIcon"><img src="../../assets/img/linkedin.png"></div>
-        <span class="startEmail">egal&#64;gmail.com</span>
-    </div>
-</div>
-
-<app-aboutme></app-aboutme>
-<app-myskills></app-myskills>
-<app-portfolio></app-portfolio>
-<app-contact></app-contact>
-<app-footer></app-footer>
+    <app-aboutme id="app-aboutme"></app-aboutme>
+    <app-myskills id="app-myskills"></app-myskills>
+    <app-portfolio id="app-portfolio"></app-portfolio>
+    <app-contact id="app-contact"></app-contact>
+    <app-footer></app-footer>
 </div>
 

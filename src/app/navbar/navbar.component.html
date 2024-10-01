@@ -1,23 +1,23 @@
-<div class="dropDownMenu">
-    <div class="dropDownHead">
-        <span>Sebastian</span>
-        <div>
+
+<nav class="navbar">
+    <div class="navDiv">
+        <div class="name">
+            <span>Sebastian</span>   
+        </div>
+        <div class="navigation">
+            <span (click)="scrollToId('app-aboutme')">About me</span>
+            <span (click)="scrollToId('app-myskills')">Skills</span>
+            <span (click)="scrollToId('app-portfolio')">Portfolio</span>
+        </div>
+        <div class="burgermenuDiv" (click)="showOrCloseDropdown()">
             <img src="../../assets/img/burgermenu.png">
         </div>
     </div>
-</div>
-
-<nav class="navbar">
-    <div class="name">
-        <span>Sebastian</span>   
-    </div>
-    <div class="navigation">
-        <span>About me</span>
-        <span>Skills</span>
-        <span>Portfolio</span>
-    </div>
-    <div class="burgermenuDiv">
-        <img src="../../assets/img/burgermenu.png">
+    <div id="dropDownMenu" class="dropDownMenu" [ngClass]="{'d-none': !isDropdownVisible}">
+        <span (click)="scrollToIdMobile('app-aboutme')">About me</span>
+        <span (click)="scrollToIdMobile('app-myskills')">Skills</span>
+        <span (click)="scrollToIdMobile('app-portfolio')">Portfolio</span>
+        <span (click)="scrollToIdMobile('app-contact')">Contact</span>
     </div>
 </nav>
 
