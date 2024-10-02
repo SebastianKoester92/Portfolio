@@ -1,5 +1,8 @@
 .portfolioDiv {
     padding-top: 100px;
+    overflow: hidden;
+    position: relative;
+
     .portfolioHead {
         display: flex;
         align-items: end;
@@ -120,6 +123,24 @@
         }
     }
 }
+.projectDiv {
+    display: flex;
+    position: relative; /* Um sicherzustellen, dass das Element relativ zu seinem Container positioniert ist */
+    overflow: hidden; /* Verhindert, dass der Inhalt außerhalb des Elements sichtbar ist */
+    opacity: 0; /* Start mit voller Transparenz */
+    transform: translateX(100%); /* Startposition außerhalb des Sichtfelds (rechts) */
+    transition: transform 2s ease, opacity 2s ease; /* Animationseffekte */
+}
+
+.slide-in {
+    opacity: 1; /* Vollständig sichtbar */
+    transform: translateX(0); /* Endposition in der ursprünglichen Position */
+}
+.slide-out {
+    opacity: 0; /* Vollständig unsichtbar */
+    transform: translateX(100%); /* Ausgangsposition außerhalb des Sichtfelds (rechts) */
+}
+
 
 
 
