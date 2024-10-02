@@ -28,7 +28,6 @@ export class PortfolioComponent implements AfterViewInit {
     });
 
     observer.observe(this.projectDiv.nativeElement); // Beobachte das Element
-    console.log('IntersectionObserver' in window);
   }
 
   
