@@ -20,4 +20,8 @@ export class FooterComponent {
       }
     });
   }
+
+  openLink(repository: string): void{
+    window.open(repository, '_blank');
+  }
 }

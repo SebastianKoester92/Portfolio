@@ -35,4 +35,8 @@ export class StartscreenComponent {
     });
   }
 
+  openLink(repository: string): void{
+    window.open(repository, '_blank');
+  }
+
 }
