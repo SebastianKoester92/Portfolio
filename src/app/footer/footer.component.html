@@ -1,9 +1,8 @@
 <div class="footerTopLine"></div>
-
 <div class="footerDiv">
     <div class="footerLeft">
         <span class="footerName" (click)="scrollToId('pageBox')">Sebastian</span>
-        <span class="imprint">Impressum</span>
+        <span class="imprint" (click)="openLink('/imprint')">Impressum</span>
     </div>
     <div class="footerMiddle">
         <span class="copyright">&#x00A9; Sebastian Köster 2024</span>
@@ -13,5 +12,5 @@
         <div><img src="../../assets/img/letter.png"></div>
         <div><img src="../../assets/img/linkedin.png"></div>
     </div>
-    <span class="imprintMobile">Impressum</span>
+    <span class="imprintMobile" (click)="openLink('/imprint')">Impressum</span>
 </div>
