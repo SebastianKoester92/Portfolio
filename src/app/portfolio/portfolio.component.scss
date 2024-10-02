@@ -129,7 +129,7 @@
     overflow: hidden; /* Verhindert, dass der Inhalt außerhalb des Elements sichtbar ist */
     opacity: 0; /* Start mit voller Transparenz */
     transform: translateX(100%); /* Startposition außerhalb des Sichtfelds (rechts) */
-    transition: transform 2s ease, opacity 2s ease; /* Animationseffekte */
+    transition: transform 1.5s ease, opacity 1.5s ease; /* Animationseffekte */
 }
 
 .slide-in {
