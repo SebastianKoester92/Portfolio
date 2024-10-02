@@ -135,6 +135,13 @@
     }
 }
 
+.invalid-input {
+    border: 1px solid red !important;
+}
+.valid-input {
+    border: 1px solid greenyellow !important; 
+}
+
 
 
 @media(max-width: 850px) {

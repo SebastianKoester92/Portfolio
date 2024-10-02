@@ -9,4 +9,8 @@ import { Component } from '@angular/core';
 })
 export class PortfolioComponent {
 
+  openRepository(repository: string): void{
+    window.open(repository, '_blank');
+  }
+
 }
