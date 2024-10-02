@@ -38,5 +38,8 @@ export class StartscreenComponent {
   openLink(repository: string): void{
     window.open(repository, '_blank');
   }
+  openEmail() {
+    window.location.href = 'mailto:contact@koestersebastian.de';
+  }
 
 }
