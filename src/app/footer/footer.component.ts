@@ -22,7 +22,6 @@ export class FooterComponent {
   }
 
   openLink(repository: string): void{
-    console.log('Link wurde aufgerufen: ', repository)
     window.open(repository, '_blank');
   }
 }

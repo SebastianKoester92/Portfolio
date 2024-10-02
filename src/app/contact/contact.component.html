@@ -28,6 +28,13 @@
                     'invalid-input': contactForm.controls['message']?.invalid && contactForm.controls['message']?.touched,
                     'valid-input': contactForm.controls['message']?.valid && contactForm.controls['message']?.touched
                   }" [(ngModel)]="contactData.message" class="textarea1" id="message" name="message" placeholder="Your message" required></textarea>
+                
+                <div class="divPrivacyPolicy">
+                    <label class="lableContainer">
+                        <input class="privacyPolicyCheckbox" type="checkbox" required>
+                        <span class="privacyText">I've read the <span class="privacyLink" (click)="openLink('/privacy')">privacy policy</span> and agree to the processing of my data as outlined</span>
+                    </label>
+                </div>
                 <input class="input2" type="submit" value="Send message" required>   
             </form>
         </div>

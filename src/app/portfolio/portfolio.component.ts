@@ -9,11 +9,11 @@ import { CommonModule } from '@angular/common';
   styleUrl: './portfolio.component.scss'
 })
 export class PortfolioComponent implements AfterViewInit {
-
+  
   @ViewChild('projectDiv') projectDiv!: ElementRef; // Referenz auf das div-Element
 
   ngAfterViewInit() {
-    const observer = new IntersectionObserver((entries) => {
+    let observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           // Wenn das Element im Sichtfeld ist, füge die Klasse für das Hereinsliden hinzu
