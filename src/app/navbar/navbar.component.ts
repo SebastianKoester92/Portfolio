@@ -15,7 +15,6 @@ export class NavbarComponent {
 
 
   scrollToIdMobile(id: string) {
-    // Navigiere zur Seite, die die Ziel-ID hat
     this.router.navigate(['/start']).then(() => {
       const element = document.getElementById(id);
       if (element) {
@@ -26,7 +25,6 @@ export class NavbarComponent {
   }
 
   scrollToId(id: string) {
-    // Navigiere zur Seite, die die Ziel-ID hat
     this.router.navigate(['/start']).then(() => {
       const element = document.getElementById(id);
       if (element) {
@@ -35,11 +33,6 @@ export class NavbarComponent {
     });
   }
 
-
-
-
-
-  // open and close the dropDownmenu
   isDropdownVisible: boolean = false;
   showOrCloseDropdown() {
     this.isDropdownVisible = !this.isDropdownVisible;

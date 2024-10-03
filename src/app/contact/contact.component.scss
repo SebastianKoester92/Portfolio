@@ -53,6 +53,10 @@
                 .contactText3Span{
                     font-weight: 700;
                 }
+                .contactText3Span:hover {
+                    cursor: pointer;
+                    color: #00BEE8;
+                }
             }
         }
 
@@ -146,19 +150,19 @@
 
                     input[type="checkbox"].privacyPolicyCheckbox {
                         appearance: none;
-                        -webkit-appearance: none; /* für WebKit-basierte Browser (Safari, Chrome) */
-                        width: 18px !important; /* Größe der Checkbox */
+                        -webkit-appearance: none;
+                        width: 18px !important; 
                         height: 18px !important;
-                        border: 2px solid #00BEE8; /* Grüner Rand */
-                        border-radius: 3px; /* Optional: leicht abgerundete Ecken */
-                        background-color: transparent; /* Kein Hintergrund */
+                        border: 2px solid #00BEE8; 
+                        border-radius: 3px; 
+                        background-color: transparent; 
                         cursor: pointer;
                         position: relative;
                     }
 
                     input[type="checkbox"].privacyPolicyCheckbox:checked::before {
-                        content: '\2714'; /* Unicode für das Häkchen */
-                        color: #00BEE8; /* Grünes Häkchen */
+                        content: '\2714'; 
+                        color: #00BEE8;
                         font-size: 16px;
                         position: absolute;
                         top: -4px;
@@ -169,6 +173,7 @@
                     }
                     .privacyLink:hover {
                         cursor: pointer;
+                        color: #00BEE8;
                     }
                 }
             }

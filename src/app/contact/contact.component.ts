@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
-import { FormsModule, NgForm } from '@angular/forms';
+import { FormsModule, NgForm, AbstractControl } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -33,13 +33,14 @@ export class ContactComponent {
     },
   };
 
-  onSubmit(ngForm: NgForm) {
+  onSubmit(ngForm: NgForm, privacyCheckbox: HTMLInputElement) {
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
 
             ngForm.resetForm();
+            privacyCheckbox.checked = false;
           },
           error: (error) => {
             console.error(error);
@@ -49,6 +50,8 @@ export class ContactComponent {
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
 
       ngForm.resetForm();
+      privacyCheckbox.checked = false;
+      console.log('mail was send');
     }
   }
 
@@ -57,4 +60,14 @@ export class ContactComponent {
     console.log('Link wurde aufgerufen: ', repository)
     window.open(repository, '_blank');
   }
+  openEmail() {
+    window.location.href = 'mailto:contact@koestersebastian.de';
+  }
+
+  onCheckboxChange() {
+  }
+  markAsTouched(control: AbstractControl) {
+    control.markAsTouched();
+  }
+  
 }

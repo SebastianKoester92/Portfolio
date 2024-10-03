@@ -26,7 +26,6 @@ export class PortfolioComponent implements AfterViewInit {
         }
       });
     });
-
     observer.observe(this.projectDiv.nativeElement); // Beobachte das Element
   }
 

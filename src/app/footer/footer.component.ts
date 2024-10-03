@@ -12,7 +12,6 @@ import { Router } from '@angular/router';
 export class FooterComponent {
   constructor(private router: Router) {}
   scrollToId(id: string) {
-    // Navigiere zur Seite, die die Ziel-ID hat
     this.router.navigate(['/start']).then(() => {
       const element = document.getElementById(id);
       if (element) {
@@ -23,5 +22,8 @@ export class FooterComponent {
 
   openLink(repository: string): void{
     window.open(repository, '_blank');
+  }
+  openEmail() {
+    window.location.href = 'mailto:contact@koestersebastian.de';
   }
 }

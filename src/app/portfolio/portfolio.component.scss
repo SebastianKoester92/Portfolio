@@ -125,20 +125,20 @@
 }
 .projectDiv {
     display: flex;
-    position: relative; /* Um sicherzustellen, dass das Element relativ zu seinem Container positioniert ist */
-    overflow: hidden; /* Verhindert, dass der Inhalt außerhalb des Elements sichtbar ist */
-    opacity: 0; /* Start mit voller Transparenz */
-    transform: translateX(100%); /* Startposition außerhalb des Sichtfelds (rechts) */
-    transition: transform 1.5s ease, opacity 1.5s ease; /* Animationseffekte */
+    position: relative; 
+    overflow: hidden; 
+    opacity: 0; 
+    transform: translateX(100%);
+    transition: transform 1.5s ease, opacity 1.5s ease; 
 }
 
 .slide-in {
-    opacity: 1; /* Vollständig sichtbar */
-    transform: translateX(0); /* Endposition in der ursprünglichen Position */
+    opacity: 1; 
+    transform: translateX(0);
 }
 .slide-out {
-    opacity: 0; /* Vollständig unsichtbar */
-    transform: translateX(100%); /* Ausgangsposition außerhalb des Sichtfelds (rechts) */
+    opacity: 0; 
+    transform: translateX(100%);
 }
 
 
