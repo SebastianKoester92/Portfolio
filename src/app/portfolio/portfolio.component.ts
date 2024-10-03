@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
+import { Component, AfterViewInit, ElementRef, ViewChildren, QueryList } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -10,26 +10,50 @@ import { CommonModule } from '@angular/common';
 })
 export class PortfolioComponent implements AfterViewInit {
   
-  @ViewChild('projectDiv') projectDiv!: ElementRef; // Referenz auf das div-Element
+  @ViewChildren('projectDiv') projectDivs!: QueryList<ElementRef>; // Referenz auf mehrere div-Elemente
 
   ngAfterViewInit() {
-    let observer = new IntersectionObserver((entries) => {
+    let isSlideFromRight = true; // Zählervariable für die Slide-Richtung
+
+    const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          // Wenn das Element im Sichtfeld ist, füge die Klasse für das Hereinsliden hinzu
-          entry.target.classList.add('slide-in');
-          entry.target.classList.remove('slide-out'); // Stelle sicher, dass die Klasse für das Herausgleiten entfernt wird
+          // Überprüfen, ob das Element von rechts oder von links sliden soll
+          const slideDirection = entry.target.getAttribute('data-slide-direction');
+          if (slideDirection === 'right') {
+            entry.target.classList.add('slide-in-right');
+            entry.target.classList.remove('slide-out-right');
+          } else {
+            entry.target.classList.add('slide-in-left');
+            entry.target.classList.remove('slide-out-left');
+          }
         } else {
-          // Wenn das Element das Sichtfeld verlässt, füge die Klasse für das Herausgleiten hinzu
-          entry.target.classList.add('slide-out');
-          entry.target.classList.remove('slide-in'); // Stelle sicher, dass die Klasse für das Hereinsliden entfernt wird
+          // Element ist nicht im Sichtfeld, Animation entfernen
+          const slideDirection = entry.target.getAttribute('data-slide-direction');
+          if (slideDirection === 'right') {
+            entry.target.classList.add('slide-out-right');
+            entry.target.classList.remove('slide-in-right');
+          } else {
+            entry.target.classList.add('slide-out-left');
+            entry.target.classList.remove('slide-in-left');
+          }
         }
       });
     });
-    observer.observe(this.projectDiv.nativeElement); // Beobachte das Element
+
+    // Beobachte jedes 'projectDiv'-Element und füge abwechselnde Slide-Richtungen hinzu
+    this.projectDivs.forEach((projectDiv: ElementRef, index: number) => {
+      const element = projectDiv.nativeElement;
+      // Weise abwechselnd die Slide-Richtung zu (rechts und links)
+      if (index % 2 === 0) {
+        element.setAttribute('data-slide-direction', 'right');
+      } else {
+        element.setAttribute('data-slide-direction', 'left');
+      }
+      observer.observe(element);
+    });
   }
 
-  
 
   openLink(repository: string): void{
     window.open(repository, '_blank');

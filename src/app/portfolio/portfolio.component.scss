@@ -46,109 +46,164 @@
         }    
         
     }
-    .projectDiv {
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        margin-left: 100px;
-        margin-right: 100px;
-        gap: 100px;
-        /*transform: scaleX(-1);*/
-
-        .projectImage {
-            height: 500px;
-            /*transform: scaleX(-1);*/
-        }
-
-        .projectDescription {
-            display: flex;
-            flex-direction: column;
-            justify-content: start;
-            width: 513px;
-            gap: 15px;
-            /*transform: scaleX(-1);*/
-
-            .projectName {
-                color: #4B47FF;
-                font-size: 32px;
-                font-weight: 700;
-            }
-            .projectUsedTools {
-                color: #00BEE8;
-                font-size: 23px;
-                font-weight: 400;
-            }
-            .projectDescriptionText {
-                color: white;
-                font-size: 16px;
-                font-weight: 400;
-            }
-            .projectButtons {
-                display: flex;
-                margin-top: 30px;
-                gap: 86px;
-
-                .projectButtonLive {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 152px;
-                    height: 58px;
-                    border-radius: 10px;
-                    padding: 15px, 30px, 15px, 30px;
-                    color: white;
-                    background-color: #4B47FF;
-                    font-size: 23px;
-                    font-weight: 400;
-                }
-                .projectButtonGit {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 137px;
-                    height: 58px;
-                    border-radius: 10px;
-                    border: 1px solid #00BEE8;
-                    padding: 15px, 30px, 15px, 30px;
-                    color: white;
-                    font-size: 23px;
-                    font-weight: 400;
-                }
-                .projectButtonGit:hover,
-                .projectButtonLive:hover {
-                    cursor: pointer;
-                    scale: 1.05;
-                }
-            }
-        }
-    }
 }
+.projectDiv {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    gap: 90px;
+}
+
+.projectImage {
+    height: 500px;
+}
+
+.projectDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 513px;
+    gap: 15px;
+}
+.projectName {
+    color: #4B47FF;
+    font-size: 32px;
+    font-weight: 700;
+}
+.projectUsedTools {
+    color: #00BEE8;
+    font-size: 23px;
+    font-weight: 400;
+}
+.projectDescriptionText {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+.projectButtons {
+    display: flex;
+    margin-top: 30px;
+    gap: 86px;
+}
+.projectButtonLive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 152px;
+    height: 58px;
+    border-radius: 10px;
+    padding: 15px, 30px, 15px, 30px;
+    color: white;
+    background-color: #4B47FF;
+    font-size: 23px;
+    font-weight: 400;
+}
+.projectButtonGit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 137px;
+    height: 58px;
+    border-radius: 10px;
+    border: 1px solid #00BEE8;
+    padding: 15px, 30px, 15px, 30px;
+    color: white;
+    font-size: 23px;
+    font-weight: 400;
+}
+.projectButtonGit:hover,
+.projectButtonLive:hover {
+    cursor: pointer;
+    scale: 1.05;
+}
+
+        
+    
+.textEnd {
+    text-align: end;
+}
+
+.transformX {
+    transform: scaleX(-1);   
+}
+
 .projectDiv {
     display: flex;
     position: relative; 
     overflow: hidden; 
     opacity: 0; 
-    transform: translateX(100%);
-    transition: transform 1.5s ease, opacity 1.5s ease; 
+    transform: translateX(100%); 
 }
 
-.slide-in {
-    opacity: 1; 
+.contentEnd {
+    justify-content: center;
+}
+
+.contentStart {
+    justify-content: center;
+}
+
+
+.slide-in-right {
+    opacity: 1;
     transform: translateX(0);
-}
-.slide-out {
-    opacity: 0; 
+    transition: transform 1.5s ease-out, opacity 1.5s ease-out;
+    transition-delay: 0.5s;
+  }
+  
+  .slide-out-right {
+    opacity: 0;
     transform: translateX(100%);
-}
+    transition: transform 0.1s ease-in, opacity 0.1s ease-in;
+  }
+  
+  
+  .slide-in-left {
+    opacity: 1;
+    transform: translateX(0);
+    transition: transform 1.5s ease-out, opacity 1.5s ease-out;
+    transition-delay: 0.5s;
+  }
+  
+  .slide-out-left {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 0.1s ease-in, opacity 0.1s ease-in;
+  }
+
+
 
 @media(max-width: 1190px) {
     .portfoliorightLine {
         width: 150px !important;
     }
     .projectDiv {
-        flex-direction: column !important;
-        margin: 0 !important;
+        margin-bottom: 100px !important;
+        margin-left: 0;
+        margin-right: 0;
         gap: 0 !important;
+    }
+    .directionColumn {
+        flex-direction: column !important;
+    }
+    .directionReverse {
+        flex-direction: column-reverse !important;
+    }
+    .projectName,
+    .projectUsedTools,
+    .projectDescriptionText {
+        text-align: center !important;
+    }
+    .projectButtons {
+        justify-content: space-around;
+    }
+    .contentEnd {
+        justify-content: end;
+    }
+    
+    .contentStart {
+        justify-content: start;
     }
 }
 
@@ -164,7 +219,7 @@
         font-size: 45px !important;
     }
     .portfolioHead {
-        margin-bottom: 0 !important;
+        margin-bottom: 30px !important;
     }
     .portfolioHeadDiv {
         display: flex;
@@ -183,8 +238,6 @@
         justify-content: center;
     }
     .projectDiv {
-        flex-direction: column !important;
-        margin: 0 !important;
         gap: 0 !important;
     }
     .projectImage {
@@ -197,5 +250,11 @@
     .projectUsedTools,
     .projectDescriptionText {
         text-align: center !important;
+    }
+    .directionColumn {
+        flex-direction: column !important;
+    }
+    .directionReverse {
+        flex-direction: column-reverse !important;
     }
 }
