@@ -3,7 +3,7 @@
     margin-left: 100px;
     padding-top: 100px;
     justify-content: space-between;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
 
     .textDiv {
         display: flex;
@@ -61,7 +61,7 @@
     } 
 }
 
-@media(max-width: 1408px) {
+@media(max-width: 1410px) {
     .aboutMeSection {
         flex-direction: column;
         align-items: center;

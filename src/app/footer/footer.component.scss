@@ -24,6 +24,7 @@
             cursor: pointer;
         }
         .imprint {
+            width: fit-content;
             color: #4B47FF;
             font-size: 16px;
             font-weight: 400;
@@ -63,6 +64,25 @@
     color: #00BEE8;
    } 
 
+}
+
+@media(max-width: 1190px) {
+    .footerDiv {
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 !important;
+        gap: 20px !important;
+    }
+    .imprint {
+        display: none !important;
+    }
+    .imprintMobile {
+        display: flex !important;
+    }
+    .footerRight {
+        gap: 42px !important;
+    } 
 }
 
 

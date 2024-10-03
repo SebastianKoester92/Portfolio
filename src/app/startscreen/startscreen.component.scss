@@ -161,15 +161,54 @@
     }
   }
 
-  @media (max-width: 1099px) {
-    .personalFrontPage {
-        padding-left: 10px;
-        padding-right: 10px;
+
+
+@media(max-width: 1410px) {
+    .PageBox {
+        width: 1170px;
+    }
+    .iAmTextSpan {
+        font-size: 57px !important;
+    }
+    .startName {
+        font-size: 65px !important;
+        line-height: 85px !important;
+    }
+    .startJob {
+        font-size: 54px !important;
+        line-height: 75px !important;
+    }
+    .personalDescription {
+        gap: 15px;
     }
     .iAmText {
-        width: 60px;
+        width: 30px;
     }
-  }
+}
+
+@media(max-width: 1190px) {
+    .PageBox {
+        width: 833px;
+    }
+    .iAmTextSpan {
+        font-size: 47px !important;
+    }
+    .startName {
+        font-size: 55px !important;
+        line-height: 70px !important;
+    }
+    .startJob {
+        font-size: 44px !important;
+        line-height: 60px !important;
+    }
+    .personalDescription {
+        gap: 0px;
+    }
+    .iAmText {
+        width: 45px;
+    }
+}
+
 
 @media(max-width: 850px) {
     .PageBox {
@@ -177,7 +216,8 @@
     }
     .startscreen {
         height: auto;
-        margin-bottom: 100px !important;
+        margin-bottom: 30px !important;
+        padding-top: 130px;
     }
     .personalFrontPage {
         padding: 0;
@@ -191,7 +231,7 @@
     }
     .startName {
         font-size: 35px !important;
-        line-height: 54px !important;
+        line-height: 41px !important;
     }
     .startJob {
         font-size: 24px !important;
@@ -201,6 +241,7 @@
         width: 133px !important;
         height: 49px !important;
         font-size: 16px !important;
+        margin-top: 40px !important;
     }
     .startEmail {
         display: none;
@@ -208,6 +249,13 @@
     .lineDiv {
         width: 64px;
     }
+    .personalDescription {
+        gap: 8px;
+    }
+    .iAmText {
+        width: 20px;
+    }
+    
 }
 
 

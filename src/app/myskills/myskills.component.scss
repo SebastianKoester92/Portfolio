@@ -88,16 +88,36 @@
     scale: 1.15;
 }
 
+@media(max-width: 1410px) {
+    .skillsDiv {
+        flex-direction: column-reverse;
+        margin-left: 0;
+        margin-right: 0;
+        align-items: center; 
+    }
+    .getintouchButton {
+        display: none !important;
+    }
+    .getintouchButtonMobile {
+        display: flex !important;
+        margin: 0 !important;
+    }
+    .skillsdescription {
+        text-align: start !important;
+    }
+    .skillsTextDiv {
+        align-items: start !important;
+    }  
+}
 
-
-
+    
 @media(max-width: 850px) {
     .skillsDiv {
         flex-direction: column-reverse;
         margin-left: 0;
         margin-right: 0;
         align-items: center;
-        margin-bottom: 150px !important;
+        margin-bottom: 70px !important;
     }
     .getintouchButton {
         display: none !important;
@@ -124,6 +144,12 @@
         align-self: center !important;
         justify-self: center !important;
     }
+    .skillsdescription {
+        text-align: end !important;
+    }
+    .skillsTextDiv {
+        align-items: end !important;
+    } 
 }
 
 

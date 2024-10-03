@@ -141,7 +141,16 @@
     transform: translateX(100%);
 }
 
-
+@media(max-width: 1190px) {
+    .portfoliorightLine {
+        width: 150px !important;
+    }
+    .projectDiv {
+        flex-direction: column !important;
+        margin: 0 !important;
+        gap: 0 !important;
+    }
+}
 
 
 @media(max-width: 850px) {
