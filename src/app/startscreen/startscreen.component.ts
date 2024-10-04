@@ -24,9 +24,18 @@ export class StartscreenComponent {
   constructor(private router: Router){}
 
 
-
-  scrollToId(id: string) {
-    this.router.navigate(['/start']).then(() => {
+/**
+ * Scrolls smoothly to an HTML element with the given id after navigating to the specified route.
+ * 
+ * @param {string} id - The id of the HTML element to scroll to.
+ * @param {string} route - The route to navigate to before scrolling.
+ * 
+ * This function navigates to the provided route using Angular's Router. Once the navigation is 
+ * complete, it locates the element by its id and smoothly scrolls it into view if found. 
+ * The 'scrollIntoView' method is used with a smooth scrolling behavior for a better user experience.
+ */  
+  scrollToId(id: string, route: string) {
+    this.router.navigate([route]).then(() => {
       const element = document.getElementById(id);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
@@ -34,10 +43,18 @@ export class StartscreenComponent {
     });
   }
 
+
+/**
+ * Opens the provided repository URL in a new browser tab.
+ * 
+ * @param {string} repository - The URL of the repository to open.
+ */
   openLink(repository: string): void{
     window.open(repository, '_blank');
   }
   
+
+  // Redirects the user to their default email client with a pre-filled recipient address
   openEmail() {
     window.location.href = 'mailto:contact@koestersebastian.de';
   }
