@@ -127,7 +127,6 @@
                 padding-bottom: 15px;
                 padding-left: 30px;
                 padding-right: 30px;
-                background-color: #00BEE8;
                 color: white;
                 font-size: 23px;
                 font-weight: 400;
@@ -135,6 +134,13 @@
             .input2:hover {
                 cursor: pointer;
             }
+            .disabled-button {
+                background-color: grey;  
+            }
+            .enabled-button {
+                background-color: #00BEE8;
+            }
+            
 
             .divPrivacyPolicy {
                 font-size: 14px;
